@@ -9,6 +9,18 @@
 import UIKit
 
 class DetailsViewModelImpl: DetailsViewModel {
+    var id: String = ""
+    
+    var owner: String = ""
+    
+    var ispublic: Int = 0
+    
+    var isfriend: Int = 0
+    
+    var isfamily: Int = 0
+    
+    var title: String = ""
+    
     var url: URL? {
         return URL(string: "https://farm\(photo.farm).staticflickr.com/\(photo.server)/\(photo.id)_\(photo.secret)_b.jpg")
     }

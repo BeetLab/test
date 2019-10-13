@@ -10,6 +10,11 @@ import Foundation
 
 protocol DetailsViewModel: class {
     var url: URL? { get }
+    var id: String { get }
+    var owner: String { get }
+    var ispublic: Int { get }
+    var isfriend: Int { get }
+    var isfamily: Int { get }
     var title: String { get }
     var isFav: Bool { get set }
     var favButtonTitle: Observable<String> { get }
